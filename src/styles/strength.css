@@ -1,0 +1,60 @@
+.strength {
+  background: #111;
+  color: #fff;
+}
+
+.strength-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.strength-label {
+  color: #ff7a00;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.strength h2 {
+  margin-bottom: 60px;
+}
+
+.strength-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.strength-card {
+  background: #1c1c1c;
+  border-radius: 20px;
+  padding: 45px 35px;
+  transition: all 0.35s ease;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.strength-card:hover {
+  transform: translateY(-10px);
+  background: #252525;
+  border-color: #ff7a00;
+}
+
+.strength-card h3 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.strength-card p {
+  color: #d0d0d0;
+  line-height: 2;
+}
+
+@media (max-width: 900px) {
+  .strength-list {
+    grid-template-columns: 1fr;
+  }
+
+  .strength-card {
+    padding: 40px 30px;
+  }
+}

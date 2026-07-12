@@ -1,0 +1,104 @@
+.hero {
+  height: 100vh;
+  min-height: 750px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+}
+
+
+.hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+}
+
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+/* ZERO-ONE */
+.sub-title {
+  font-size: 22px;
+  letter-spacing: 8px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+
+/* メインコピー */
+.hero h1 {
+  font-size: 76px;
+  line-height: 1.25;
+  font-weight: 900;
+  letter-spacing: 3px;
+  margin: 0 0 30px;
+}
+
+
+/* 英字・説明 */
+.description {
+  font-size: 22px;
+  line-height: 1.8;
+  letter-spacing: 1px;
+}
+
+
+/* ボタン */
+.hero-btn {
+  display: inline-block;
+  margin-top: 45px;
+  padding: 16px 50px;
+  background: #f58220;
+  color: white;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+
+.hero-btn:hover {
+  opacity: 0.8;
+}
+
+
+/* スマホ */
+@media screen and (max-width:768px){
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .sub-title {
+    font-size: 16px;
+  }
+
+  .description {
+    font-size: 16px;
+  }
+
+}

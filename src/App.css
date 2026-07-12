@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #ffffff;
+  color: #111;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+}
+
+section {
+  padding: 120px 8%;
+}
+
+h1 {
+  font-weight: 800;
+}
+
+h2 {
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+p {
+  line-height: 1.9;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.hero-btn,
+.recruit-btn,
+.contact-btn,
+.contact-phone,
+.contact-mail {
+  transition: all 0.35s ease;
+}
+
+.hero-btn:hover,
+.recruit-btn:hover,
+.contact-btn:hover,
+.contact-phone:hover,
+.contact-mail:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}

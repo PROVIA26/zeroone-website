@@ -1,0 +1,62 @@
+.recruit {
+  background: #ffffff;
+  text-align: center;
+}
+
+.recruit-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.recruit-label {
+  color: #ff7a00;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+}
+
+.recruit h2 {
+  font-size: 52px;
+  margin-bottom: 35px;
+  line-height: 1.3;
+}
+
+.recruit-text {
+  color: #666;
+  font-size: 18px;
+  line-height: 2;
+  margin-bottom: 50px;
+}
+
+.recruit-btn {
+  display: inline-block;
+  background: #ff7a00;
+  color: #fff;
+  padding: 18px 45px;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: all 0.35s ease;
+}
+
+.recruit-btn:hover {
+  transform: translateY(-5px);
+  background: #e56d00;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.18);
+}
+
+@media (max-width: 900px) {
+  .recruit h2 {
+    font-size: 38px;
+  }
+
+  .recruit-text {
+    font-size: 16px;
+  }
+
+  .recruit-btn {
+    width: 100%;
+    max-width: 320px;
+    padding: 16px 20px;
+  }
+}

@@ -1,0 +1,85 @@
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+
+.header-inner {
+  width: 100%;
+  padding: 28px 45px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+
+/* ロゴ */
+.logo img {
+  width: 220px;
+  height: auto;
+  transform: translateY(5px);
+}
+
+
+/* メニュー */
+nav {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+  margin-top: 18px;
+}
+
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+
+nav a:hover {
+  opacity: 0.7;
+}
+
+
+/* お問い合わせボタン */
+.contact-btn {
+  background: #f58220;
+  color: white !important;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 35px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+
+/* スマホ */
+@media screen and (max-width:768px){
+
+  .header-inner {
+    padding: 20px;
+  }
+
+
+  .logo img {
+    width: 160px;
+  }
+
+
+  nav {
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+
+  nav a {
+    font-size: 12px;
+  }
+
+}

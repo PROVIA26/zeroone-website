@@ -1,0 +1,53 @@
+.about {
+  padding: 120px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+
+.about-inner {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+
+.about-label {
+  color: #f58220;
+  font-size: 14px;
+  letter-spacing: 5px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+
+.about h2 {
+  font-size: 52px;
+  line-height: 1.4;
+  color: #111;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+
+.about-text {
+  color: #444;
+  font-size: 18px;
+  line-height: 2;
+}
+
+
+@media screen and (max-width:768px){
+
+  .about {
+    padding: 80px 20px;
+  }
+
+  .about h2 {
+    font-size: 34px;
+  }
+
+  .about-text {
+    font-size: 15px;
+  }
+
+}
