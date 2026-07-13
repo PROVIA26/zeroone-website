@@ -27,7 +27,7 @@
 .service-card {
   background: #ffffff;
   border-radius: 20px;
-  padding: 50px 40px;
+  padding: 45px 40px;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
   transition: all 0.35s ease;
 }
@@ -40,11 +40,15 @@
 .service-card h3 {
   font-size: 28px;
   margin-bottom: 25px;
+  word-break: normal;
 }
 
 .service-card p {
   color: #666;
-  line-height: 2;
+  line-height: 1.9;
+  font-size: 16px;
+  word-break: normal;
+  overflow-wrap: break-word;
 }
 
 @media (max-width: 900px) {
@@ -53,21 +57,15 @@
   }
 
   .service-card {
-    padding: 40px 30px;
-  }
-}
-
-/* FC事業 スマホ改行調整 */
-@media (max-width: 768px) {
-  .service-card h3,
-  .services h3 {
-    word-break: keep-all;
-    overflow-wrap: normal;
-    letter-spacing: 0.02em;
+    padding: 35px 25px;
   }
 
-  .service-card p,
-  .services p {
-    word-break: keep-all;
+  .service-card h3 {
+    font-size: 24px;
+  }
+
+  .service-card p {
+    font-size: 15px;
+    line-height: 1.8;
   }
 }
