@@ -56,3 +56,18 @@
     padding: 40px 30px;
   }
 }
+
+/* FC事業 スマホ改行調整 */
+@media (max-width: 768px) {
+  .service-card h3,
+  .services h3 {
+    word-break: keep-all;
+    overflow-wrap: normal;
+    letter-spacing: 0.02em;
+  }
+
+  .service-card p,
+  .services p {
+    word-break: keep-all;
+  }
+}
