@@ -23,10 +23,18 @@ function Hero() {
           ZERO-ONE
         </p>
 
-        <h1>
+        {/* PC表示 */}
+        <h1 className="pc-only">
           何度倒れても挑戦し
           <br />
           成長し続ける
+        </h1>
+
+        {/* スマホ表示 */}
+        <h1 className="sp-only">
+          何度倒れても
+          <br />
+          挑戦し成長し続ける
         </h1>
 
         <p className="description">

@@ -6,7 +6,7 @@ function Company() {
     ["会社名", "ZERO-ONE"],
     ["事業内容", "運送事業・飲食店FC事業"],
     ["代表", "廣瀬 冬依"],
-    ["所在地", "滋賀県草津市草津1丁目2-2"],
+    ["所在地", "滋賀県草津市\n草津1丁目2-2"],
     ["設立", "2025年　設立"],
   ];
 
@@ -47,7 +47,16 @@ function Company() {
               }}
             >
               <span>{row[0]}</span>
-              <p>{row[1]}</p>
+
+              <p>
+                {row[1].split("\n").map((line, i) => (
+                  <span key={i}>
+                    {line}
+                    {i !== row[1].split("\n").length - 1 && <br />}
+                  </span>
+                ))}
+              </p>
+
             </motion.div>
           ))}
 

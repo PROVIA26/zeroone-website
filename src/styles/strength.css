@@ -13,10 +13,12 @@
   font-weight: 700;
   letter-spacing: 3px;
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .strength h2 {
   margin-bottom: 60px;
+  text-align: center;
 }
 
 .strength-list {
@@ -42,6 +44,7 @@
 .strength-card h3 {
   font-size: 26px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .strength-card p {
@@ -56,5 +59,13 @@
 
   .strength-card {
     padding: 40px 30px;
+  }
+
+  .strength-card h3 {
+    font-size: 24px;
+  }
+
+  .strength-card p {
+    font-size: 16px;
   }
 }

@@ -69,22 +69,50 @@
 }
 
 @media (max-width: 768px) {
+
+  .contact {
+    padding: 80px 24px;
+  }
+
+  .contact-inner {
+    max-width: 100%;
+  }
+
+  .contact-label {
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+  }
+
   .contact h2 {
-    font-size: 38px;
+    font-size: 34px;
+    line-height: 1.5;
+    margin-bottom: 24px;
+    word-break: keep-all;
+    overflow-wrap: break-word;
   }
 
   .contact-text {
     font-size: 16px;
+    line-height: 2;
+    margin-bottom: 36px;
+    word-break: keep-all;
+    overflow-wrap: break-word;
   }
 
   .contact-buttons {
     flex-direction: column;
     align-items: center;
+    gap: 16px;
   }
 
   .contact-phone,
   .contact-mail {
     width: 100%;
     max-width: 320px;
+    min-width: auto;
+    padding: 16px 20px;
+    font-size: 16px;
   }
+
 }

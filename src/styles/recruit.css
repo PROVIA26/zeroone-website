@@ -46,17 +46,42 @@
 }
 
 @media (max-width: 900px) {
+
+  .recruit {
+    padding: 80px 24px;
+  }
+
+  .recruit-inner {
+    max-width: 100%;
+  }
+
+  .recruit-label {
+    font-size: 13px;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
+  }
+
   .recruit h2 {
-    font-size: 38px;
+    font-size: 34px;
+    line-height: 1.5;
+    margin-bottom: 28px;
+    word-break: keep-all;
+    overflow-wrap: break-word;
   }
 
   .recruit-text {
     font-size: 16px;
+    line-height: 2;
+    margin-bottom: 36px;
+    word-break: keep-all;
+    overflow-wrap: break-word;
   }
 
   .recruit-btn {
     width: 100%;
     max-width: 320px;
     padding: 16px 20px;
+    font-size: 16px;
   }
+
 }

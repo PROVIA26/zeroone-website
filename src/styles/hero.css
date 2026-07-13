@@ -9,12 +9,10 @@
   color: white;
 }
 
-
 .hero-bg {
   position: absolute;
   inset: 0;
 }
-
 
 .hero-bg img {
   width: 100%;
@@ -23,21 +21,19 @@
   object-position: center;
 }
 
-
 .hero-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
 }
-
 
 .hero-content {
   position: relative;
   z-index: 2;
   text-align: center;
   margin-top: 40px;
+  padding: 0 20px;
 }
-
 
 /* ZERO-ONE */
 .sub-title {
@@ -47,7 +43,6 @@
   margin-bottom: 25px;
 }
 
-
 /* メインコピー */
 .hero h1 {
   font-size: 76px;
@@ -55,16 +50,16 @@
   font-weight: 900;
   letter-spacing: 3px;
   margin: 0 0 30px;
+  text-wrap: balance;
 }
-
 
 /* 英字・説明 */
 .description {
   font-size: 22px;
   line-height: 1.8;
   letter-spacing: 1px;
+  text-wrap: balance;
 }
-
 
 /* ボタン */
 .hero-btn {
@@ -80,25 +75,44 @@
   transition: 0.3s;
 }
 
-
 .hero-btn:hover {
   opacity: 0.8;
 }
 
-
 /* スマホ */
 @media screen and (max-width:768px){
 
-  .hero h1 {
-    font-size: 42px;
+  .hero {
+    min-height: 100vh;
+  }
+
+  .hero-content {
+    margin-top: 30px;
+    padding: 0 24px;
   }
 
   .sub-title {
     font-size: 16px;
+    letter-spacing: 4px;
+    margin-bottom: 18px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+    line-height: 1.35;
+    letter-spacing: 1px;
+    margin-bottom: 24px;
   }
 
   .description {
     font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .hero-btn {
+    margin-top: 36px;
+    padding: 14px 40px;
+    font-size: 15px;
   }
 
 }

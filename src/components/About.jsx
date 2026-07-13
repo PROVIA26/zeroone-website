@@ -17,18 +17,42 @@ function About() {
           ABOUT ZERO-ONE
         </p>
 
-        <h2>
+        {/* PC表示 */}
+        <h2 className="pc-only">
           挑戦する人と、
           <br />
           未来を創る。
         </h2>
 
-        <p className="about-text">
+        {/* スマホ表示 */}
+        <h2 className="sp-only">
+          挑戦する人と、
+          <br />
+          未来を創る。
+        </h2>
+
+        {/* PC表示 */}
+        <p className="about-text pc-only">
           ZERO-ONEは、物流を通じて
           <br />
           人と企業をつなぐ会社です。
           <br /><br />
           高品質なサービスとスピード対応、
+          <br />
+          そして挑戦し続ける姿勢で、
+          <br />
+          新しい物流の未来を創ります。
+        </p>
+
+        {/* スマホ表示 */}
+        <p className="about-text sp-only">
+          ZERO-ONEは、物流を通じて
+          <br />
+          人と企業をつなぐ会社です。
+          <br /><br />
+          高品質なサービスと
+          <br />
+          スピード対応、
           <br />
           そして挑戦し続ける姿勢で、
           <br />

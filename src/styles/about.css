@@ -4,12 +4,10 @@
   text-align: center;
 }
 
-
 .about-inner {
   max-width: 900px;
   margin: 0 auto;
 }
-
 
 .about-label {
   color: #f58220;
@@ -19,7 +17,6 @@
   margin-bottom: 30px;
 }
 
-
 .about h2 {
   font-size: 52px;
   line-height: 1.4;
@@ -28,13 +25,20 @@
   margin-bottom: 40px;
 }
 
-
 .about-text {
   color: #444;
   font-size: 18px;
   line-height: 2;
 }
 
+/* PC・スマホ切替 */
+.pc-only {
+  display: block;
+}
+
+.sp-only {
+  display: none;
+}
 
 @media screen and (max-width:768px){
 
@@ -44,10 +48,21 @@
 
   .about h2 {
     font-size: 34px;
+    line-height: 1.5;
+    margin-bottom: 30px;
   }
 
   .about-text {
     font-size: 15px;
+    line-height: 2;
+  }
+
+  .pc-only {
+    display: none;
+  }
+
+  .sp-only {
+    display: block;
   }
 
 }
