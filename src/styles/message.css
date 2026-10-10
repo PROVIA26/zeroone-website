@@ -1,0 +1,224 @@
+/* ============================
+   ZERO-ONE 代表挨拶
+============================ */
+
+.message-section {
+  width: 100%;
+  padding: 100px 0;
+  background: #ffffff;
+  overflow: hidden;
+}
+
+.message-container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* タイトル */
+
+.message-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 55px;
+  padding: 0 20px;
+}
+
+.message-top p {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  color: #12376b;
+  margin: 0;
+}
+
+.message-top-line {
+  width: 65px;
+  height: 1px;
+  background: #c7d3e3;
+}
+
+/* ============================
+   PC版
+============================ */
+
+.message-section .message-pc {
+  display: block !important;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.message-section .message-pc img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* スマホ版は非表示 */
+
+.message-section .message-sp {
+  display: none !important;
+}
+
+/* ============================
+   スマートフォン
+============================ */
+
+@media screen and (max-width: 768px) {
+
+  .message-section {
+    padding: 65px 0 80px;
+  }
+
+  .message-top {
+    gap: 12px;
+    margin-bottom: 35px;
+  }
+
+  .message-top p {
+    font-size: 10px;
+    letter-spacing: 2px;
+    white-space: nowrap;
+  }
+
+  .message-top-line {
+    width: 25px;
+  }
+
+  /* PC画像を非表示 */
+
+  .message-section .message-pc {
+    display: none !important;
+  }
+
+  /* スマホ版だけ表示 */
+
+  .message-section .message-sp {
+    display: block !important;
+  }
+
+  /* ============================
+     代表写真
+  ============================ */
+
+  .message-sp-photo {
+    position: relative;
+    width: calc(100% - 32px);
+    height: 390px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #071426;
+  }
+
+  .message-sp-photo img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: 15% center;
+  }
+
+  /* ============================
+     メッセージ本文
+  ============================ */
+
+  .message-sp-content {
+    padding: 45px 28px 0;
+  }
+
+  .message-sp-label {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: #0066c9;
+    font-weight: 700;
+    margin-bottom: 18px;
+  }
+
+  .message-sp-content h2 {
+    font-size: 30px;
+    line-height: 1.5;
+    font-weight: 800;
+    color: #10213b;
+    margin-bottom: 25px;
+  }
+
+  .message-sp-line {
+    width: 45px;
+    height: 3px;
+    background: #f58220;
+    margin-bottom: 35px;
+  }
+
+  .message-sp-content p {
+    font-size: 15px;
+    line-height: 2.1;
+    color: #333333;
+    margin-bottom: 22px;
+  }
+
+  .message-sp-sign {
+    margin-top: 45px;
+    padding-top: 25px;
+    border-top: 1px solid #e5e5e5;
+    text-align: right;
+  }
+
+  .message-sp-sign span {
+    display: block;
+    font-size: 12px;
+    color: #666666;
+    margin-bottom: 10px;
+  }
+
+  .message-sp-sign strong {
+    display: block;
+    font-size: 24px;
+    letter-spacing: 3px;
+    color: #10213b;
+  }
+}
+
+/* ============================
+   スマホ版：画像全体を表示
+============================ */
+
+@media screen and (max-width: 768px) {
+
+  /* スマホ用の切り抜き画像を非表示 */
+  .message-section .message-sp {
+    display: none !important;
+  }
+
+  /* PCと同じ画像をスマホでも表示 */
+  .message-section .message-pc {
+    display: block !important;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  /* 画像を一切切り取らない */
+  .message-section .message-pc img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 0;
+  }
+
+  .message-section {
+    padding: 60px 0;
+  }
+
+  .message-top {
+    margin-bottom: 30px;
+  }
+
+}

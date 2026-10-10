@@ -1,4 +1,6 @@
-header {
+/* ZERO-ONE HEADER */
+
+.header {
   width: 100%;
   position: absolute;
   top: 0;
@@ -8,90 +10,163 @@ header {
 
 .header-inner {
   width: 100%;
-  padding: 28px 45px;
+  padding: 25px 45px;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  gap: 30px;
+  box-sizing: border-box;
 }
 
 /* ロゴ */
-.logo img {
-  width: 220px;
-  height: auto;
-  transform: translateY(5px);
+
+.header .logo {
+  flex-shrink: 0;
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  backdrop-filter: none;
 }
 
-/* メニュー */
-nav {
+.header .logo a {
+  display: block;
+  text-decoration: none;
+}
+
+.header .logo img {
+  width: 190px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  transform: none;
+  transition: transform 0.3s ease;
+}
+
+.header .logo img:hover {
+  transform: scale(1.03);
+}
+
+/* ナビゲーション */
+
+.header nav {
   display: flex;
   align-items: center;
-  gap: 38px;
-  margin-top: 18px;
+  justify-content: flex-end;
+  gap: 30px;
+  margin: 18px 0 0;
 }
 
-nav a {
-  color: white;
+.header nav a {
+  color: #ffffff;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
-  transition: 0.3s;
   white-space: nowrap;
+  transition: opacity 0.3s ease;
 }
 
-nav a:hover {
+.header nav a:hover {
   opacity: 0.7;
 }
 
 /* お問い合わせボタン */
-.contact-btn {
+
+.header .contact-btn {
   background: #f58220;
-  color: white !important;
+  color: #ffffff !important;
   border: none;
   padding: 14px 32px;
   border-radius: 35px;
   font-size: 15px;
   font-weight: bold;
+  box-shadow: none;
+  transform: none;
+  transition: background 0.3s ease;
 }
 
-/* ===========================
-   スマホ
-=========================== */
+.header .contact-btn:hover {
+  background: #e66e0d;
+  opacity: 1;
+  transform: none;
+  box-shadow: none;
+}
+
+/* タブレット */
+
+@media screen and (max-width: 1100px) {
+  .header-inner {
+    padding: 20px 25px;
+    gap: 20px;
+  }
+
+  .header .logo img {
+    width: 150px;
+  }
+
+  .header nav {
+    gap: 16px;
+  }
+
+  .header nav a {
+    font-size: 12px;
+  }
+
+  .header .contact-btn {
+    padding: 12px 18px;
+    font-size: 12px;
+  }
+}
+
+/* スマートフォン */
 
 @media screen and (max-width: 768px) {
-
   .header-inner {
-    padding: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding: 15px;
+    align-items: flex-start;
+    gap: 12px;
   }
 
-  /* ロゴ */
-  .logo img {
-    width: 95px;
-    transform: none;
+  .header .logo img {
+    width: 100px;
   }
 
-  /* メニュー */
-  nav {
+  .header nav {
     display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: flex-end;
-    gap: 10px;
-    margin: 0;
-    flex-wrap: nowrap;
+    gap: 10px 12px;
     flex: 1;
+    margin: 0;
   }
 
-  nav a {
-    font-size: 11px;
-    line-height: 1;
-    white-space: nowrap;
+  .header nav a {
+    font-size: 10px;
+    line-height: 1.5;
   }
 
-  /* スマホではお問い合わせを非表示 */
-  .contact-btn {
+  .header .contact-btn {
     display: none;
   }
+}
 
+/* 小型スマートフォン */
+
+@media screen and (max-width: 400px) {
+  .header-inner {
+    padding: 12px 10px;
+    gap: 8px;
+  }
+
+  .header .logo img {
+    width: 80px;
+  }
+
+  .header nav {
+    gap: 8px;
+  }
+
+  .header nav a {
+    font-size: 9px;
+  }
 }

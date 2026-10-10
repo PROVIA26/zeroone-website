@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Service from "./components/Service";
 import Strength from "./components/Strength";
+import Message from "./components/Message";
 import Recruit from "./components/Recruit";
 import Company from "./components/Company";
 import Contact from "./components/Contact";
@@ -20,9 +21,11 @@ function App() {
 
       <About />
 
+      <Strength />
+
       <Service />
 
-      <Strength />
+      <Message />
 
       <Recruit />
 

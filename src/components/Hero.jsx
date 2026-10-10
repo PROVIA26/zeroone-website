@@ -4,24 +4,35 @@ import { motion } from "framer-motion";
 
 function Hero() {
   return (
-    <section className="hero">
+    <section className="hero" id="top">
 
+      {/* 背景画像 */}
       <div className="hero-bg">
-        <img src={hero} alt="ZEROONE" />
+        <img src={hero} alt="ZERO-ONE 高速道路の夜景" />
       </div>
 
+      {/* 背景を暗くするレイヤー */}
       <div className="hero-overlay"></div>
 
+      {/* メインコンテンツ */}
       <motion.div
         className="hero-content"
-        initial={{ opacity: 0, y: 40 }}
+        initial={{ opacity: 0, y: 45 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
+        transition={{
+          duration: 1.2,
+          ease: "easeOut",
+        }}
       >
 
-        <p className="sub-title">
-          ZERO-ONE
-        </p>
+        <motion.p
+          className="sub-title"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3, duration: 1 }}
+        >
+          ZERO-ONE TRANSPORT
+        </motion.p>
 
         {/* PC表示 */}
         <h1 className="pc-only">
@@ -37,6 +48,8 @@ function Hero() {
           挑戦し成長し続ける
         </h1>
 
+        <div className="hero-line"></div>
+
         <p className="description">
           A Dynamic Organization
           <br />
@@ -45,9 +58,16 @@ function Hero() {
 
         <a href="#contact" className="hero-btn">
           お問い合わせ
+          <span className="hero-arrow">→</span>
         </a>
 
       </motion.div>
+
+      {/* スクロール案内 */}
+      <div className="hero-scroll">
+        <span>SCROLL</span>
+        <div className="scroll-line"></div>
+      </div>
 
     </section>
   );
